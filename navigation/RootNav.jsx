@@ -1,12 +1,13 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import OnboardingNav from "./OnboardingNav";
+import AuthNav from "./AuthNav";
 
 const Stack = createStackNavigator();
+
 const RootNav = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="OnboardingNav" component={OnboardingNav} />
+      <Stack.Screen name="AuthNav" component={AuthNav} />
     </Stack.Navigator>
   );
 };
